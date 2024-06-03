@@ -29,6 +29,7 @@ var mySqrt = function (x) {
       return i;
     }
   }
+  s;
 };
 
 //test-Cases ==
