@@ -27,11 +27,13 @@ var mySqrt = function (x) {
   for (i = 0; i < x; i++) {
     if (x == i * i) {
       return i;
+    } else if (x > i * i && x < (i + 1) * (i + 1)) {
+      return i;
     }
   }
-  s;
 };
 
 //test-Cases ==
 console.log(mySqrt(4));
 console.log(mySqrt(6));
+console.log(mySqrt(10));
