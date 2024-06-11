@@ -26,15 +26,6 @@ var longestPalindrome = function (s) {
   let flag = 0;
   let n = array.length;
 
-  for (let a = 0; a < n; a++) {
-    if (
-      n % 2 === 0 &&
-      ((array[a] === array[n - a]) === array[a + 1]) === array[a + 2]
-    ) {
-      flag = array.length;
-    }
-  }
-
   if (n === 1) {
     flag = 1;
   } else {
@@ -47,5 +38,8 @@ var longestPalindrome = function (s) {
       }
     }
   }
+  console.log(flag);
   return flag;
 };
+
+longestPalindrome("afasfa");
